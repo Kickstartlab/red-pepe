@@ -22,7 +22,7 @@ export default function Menu() {
             <li><a href="/" className="text-zinc-100">Home</a></li>
             <li><a href="#about" className="cursor-pointer">About us</a></li>
             <li><a href="#tokenomics" className="cursor-pointer">Tokenomics</a></li>
-            <li><a href="/" className="cursor-pointer">Whitepaper</a></li>
+            <li><a href="https://red-pepe-bsc-fl.gitbook.io/redpepe-whitepaper/" className="cursor-pointer">Whitepaper</a></li>
           </ul>
         </nav>
 
@@ -61,7 +61,7 @@ export default function Menu() {
             <a href="#tokenomics" className="text-lg ml-4 tracking-wide">Tokenomics</a>
           </button>
           <button onClick={() => setShow(!show)} className="w-full py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer  text-white-100">
-            <a href="/" className="text-lg ml-4 tracking-wide">Whitepaper</a>
+            <a href="https://red-pepe-bsc-fl.gitbook.io/redpepe-whitepaper/" className="text-lg ml-4 tracking-wide">Whitepaper</a>
           </button>
         </div> : null
       }

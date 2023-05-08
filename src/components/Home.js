@@ -17,14 +17,15 @@ import c from '../assets/c.png';
 import d from '../assets/d.png';
 import e from '../assets/e.png';
 import h from '../assets/h.png';
-import g from '../assets/g.png';
-
+import audit from '../assets/audit.png';
 import team_1 from '../assets/team_1.png';
 import team_2 from '../assets/team_2.png';
 import team_3 from '../assets/team_3.png';
 import team_4 from '../assets/team_4.png';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import { TwitterTweetEmbed } from 'react-twitter-embed';
+
 
 
 export default function Home() {
@@ -41,9 +42,9 @@ export default function Home() {
 
             {/* top section */}
 
-            <img src={a} alt="Logo" className='absolute left-1/3 lg:block hidden' />
+            <img src={a} alt="Logo" className='absolute left-1/3 lg:block hidden animate-pulse' />
 
-            <img src={b} alt="Logo" className='absolute left-0 lg:block hidden top-1/3' />
+            <img src={b} alt="Logo" className='absolute left-0 lg:block hidden top-1/3 animate-pulse' />
 
             <div className="lg:px-20 px-5 bg-top relative z-20">
                 <div className='container mx-auto'>
@@ -60,13 +61,13 @@ export default function Home() {
                                 The community brought fame to Pepe, now it'stime for Red Pepe to bring the community fortunes!
                             </h2>
 
-                            <p data-aos='fade-out' className='pt-8 pb-6 lg:text-xl leading-loose text-white-50 font-light'>
+                            <p data-aos='fade-down' className='pt-8 pb-6 lg:text-xl leading-loose text-white-50 font-light'>
                                 Red is a popular colour in Chinese culture, symbolising luck, joy and prosperity! Red is a popular colour in Chinese culture, symbolising luck, joy and prosperity!
                             </p>
 
-                            <div data-aos='zoom-in' className="flex items-center justify-center lg:gap-12 gap-6 mx-auto mt-6">
-                                <a href="/">
-                                    <button className="text-white-50 bg-red-50 py-3 lg:text-lg md:px-10 px-3 text-center rounded-xl font-medium flex items-center justify-center gap-x-6 border-2 border-red-50 hover:bg-brown-100 hover:text-red-50">
+                            <div className="flex items-center justify-center lg:gap-12 gap-6 mx-auto mt-6">
+                                <a href="https://red-pepe-bsc-fl.gitbook.io/redpepe-whitepaper/">
+                                    <button data-aos='slide-right' className="text-white-50 bg-red-50 py-3 lg:text-lg md:px-10 px-3 text-center rounded-xl font-medium flex items-center justify-center gap-x-6 border-2 border-red-50 hover:bg-brown-100 hover:text-red-50">
                                         Whitepaper
 
                                         <svg className='lg:block hidden' width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -77,7 +78,7 @@ export default function Home() {
                                 </a>
 
                                 <a href="/">
-                                    <button className="text-red-50 font-medium lg:text-lg py-3 md:px-8 px-3 border-2 border-red-50 rounded-xl flex items-center justify-center gap-x-6 hover:bg-red-50 hover:text-white-50">
+                                    <button data-aos='slide-left' className="text-red-50 font-medium lg:text-lg py-3 md:px-8 px-3 border-2 border-red-50 rounded-xl flex items-center justify-center gap-x-6 hover:bg-red-50 hover:text-white-50">
                                         Buy RED PEPE
 
                                         <svg className='lg:block hidden' width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -97,7 +98,7 @@ export default function Home() {
 
             {/* about us section */}
 
-            <img src={c} alt="Logo" className='absolute right-0 lg:block hidden -mt-32' />
+            <img src={c} alt="Logo" className='absolute right-0 lg:block hidden -mt-32 animate-pulse' />
 
             <div id='about' className="lg:px-20 px-5">
                 <div className='container mx-auto'>
@@ -138,9 +139,9 @@ export default function Home() {
 
             {/* tokenomics section */}
 
-            <img src={d} alt="Logo" className='absolute left-0 lg:block hidden -mt-12' />
+            <img src={d} alt="Logo" className='absolute left-0 lg:block hidden -mt-12 animate-pulse' />
 
-            <img src={a} alt="Logo" className='absolute left-1/4 lg:block hidden mt-28' />
+            <img src={a} alt="Logo" className='absolute left-1/4 lg:block hidden mt-28 animate-pulse' />
 
             <div id='tokenomics' className="lg:px-20 px-5">
                 <div className='container mx-auto'>
@@ -149,17 +150,17 @@ export default function Home() {
                         RED PEPE
                     </p>
 
-                    <h2 className='md:text-5xl text-3xl font-junkdog text-white-50 text-center'>
+                    <h2 data-aos='slide-up' className='md:text-5xl text-3xl font-junkdog text-white-50 text-center'>
                         TOKENOMICS
                     </h2>
 
                     <div className="lg:flex block justify-center items-center gap-x-16 py-16 space-y-6">
 
-                        <div className="text-white-50 bg-red-50 py-6 text-5xl md:px-10 px-3 text-center rounded-xl font-bold border-2 border-red-50 lg:w-3/12">
+                        <div data-aos='slide-right' className="text-white-50 bg-red-50 py-6 text-5xl md:px-10 px-3 text-center rounded-xl font-bold border-2 border-red-50 lg:w-3/12">
                             TAX 0%
                         </div>
 
-                        <div className="text-red-50 font-semibold py-3 md:px-8 px-3 border-2 border-red-50 rounded-xl text-3xl lg:w-3/12">
+                        <div data-aos='slide-left' className="text-red-50 font-semibold py-3 md:px-8 px-3 border-2 border-red-50 rounded-xl text-3xl lg:w-3/12">
                             Supply
                             420,690,000,000
                         </div>
@@ -200,7 +201,7 @@ export default function Home() {
 
             {/* roadmap */}
 
-            <img src={e} alt="Logo" className='absolute right-0 lg:block hidden mt-32' />
+            <img src={e} alt="Logo" className='absolute right-0 lg:block hidden mt-32 animate-pulse' />
 
             <div
                 id="roadmap"
@@ -209,7 +210,7 @@ export default function Home() {
                 <p className='pb-5 text-red-50 font-medium text-center'>
                     RED PEPE
                 </p>
-                <h3 className="md:text-5xl font-junkdog text-2xl text-center">
+                <h3 data-aos='slide-up' className="md:text-5xl font-junkdog text-2xl text-center">
                     ROADMAP
                 </h3>
 
@@ -228,7 +229,7 @@ export default function Home() {
                         <div className="flex items-start">
 
                             <div
-                                data-aos="zoom-in"
+                                data-aos="fade-down"
                                 className="-mt-1 lg:block hidden"
                             >
 
@@ -274,7 +275,7 @@ export default function Home() {
                         <div className="flex items-start">
 
                             <div
-                                data-aos="zoom-in"
+                                data-aos="fade-down"
                                 className="-mt-1 lg:block hidden"
                             >
 
@@ -300,7 +301,7 @@ export default function Home() {
 
                             <div
                                 data-aos="flip-left"
-                                className="border border-brown-50 hover:border-red-50 text-white-50 p-5 lg:mt-12"
+                                className="border border-brown-50 hover:border-red-50 text-white-50 p-5 lg:mt-12 lg:w-72"
                             >
                                 <h5 className="text-2xl py-4 font-semibold">PHASE - II</h5>
 
@@ -319,7 +320,7 @@ export default function Home() {
                         <div className="flex items-start">
 
                             <div
-                                data-aos="zoom-in"
+                                data-aos="fade-down"
                                 className="-mt-1 lg:block hidden"
                             >
 
@@ -345,7 +346,7 @@ export default function Home() {
 
                             <div
                                 data-aos="flip-left"
-                                className="border border-brown-50 hover:border-red-50 text-white-50 p-5 lg:mt-12"
+                                className="border border-brown-50 hover:border-red-50 text-white-50 p-5 lg:mt-12 lg:w-72"
                             >
                                 <h5 className="text-2xl py-4 font-semibold">PHASE - III</h5>
 
@@ -366,27 +367,40 @@ export default function Home() {
 
             {/* one love section */}
 
-            {/* <div
+            <div
                 id="team"
                 className="lg:pb-20 py-5 lg:px-20 px-5 container mx-auto">
 
-                <div className='lg:flex block justify-center items-end gap-x-20 pt-12 space-y-8'>
+                <div className='lg:flex block justify-center items-center gap-x-20 pt-12 space-y-8'>
 
-                    <div>
-
+                    <div data-aos='slide-right' className='w-80'>
+                        <p>one love ❤️💚$PEPE</p>
+                        <TwitterTweetEmbed tweetId="1655023833563160578" />
                     </div>
 
-                    <div>
+                    <div data-aos='slide-left'>
                         <p className='pb-5 text-red-50 font-medium'>
                             RED PEPE
                         </p>
-                        <h3 className="md:text-7xl font-junkdog font-bold text-2xl uppercase">
+                        <h3 className="md:text-7xl font-junkdog font-bold text-2xl uppercase mb-12">
                             one love
                         </h3>
+
+                        <div className='space-y-6'>
+                            <h3 className="md:text-5xl font-junkdog font-bold text-2xl uppercase">
+                                Audit Report
+                            </h3>
+
+                            <div>
+                                <a href='https://github.com/Audit-Ace/Audits-Smart-Contracts/blob/main/Red%20Pepe%20Audit%20Report.pdf'>
+                                    <img src={audit} alt=''></img>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-            </div> */}
+            </div>
 
             <img src={h} alt="Logo" className='absolute right-0 lg:block hidden -mt-32' />
 
@@ -399,40 +413,40 @@ export default function Home() {
                 <p className='pb-5 text-red-50 font-medium text-center'>
                     RED PEPE
                 </p>
-                <h3 className="md:text-5xl font-junkdog text-2xl text-center">
+                <h3 data-aos='slide-up' className="md:text-5xl font-junkdog text-2xl text-center">
                     Teams
                 </h3>
 
                 <div className='lg:flex block justify-center items-end gap-x-20 pt-12 space-y-8'>
 
                     <div className='flex flex-col items-center gap-y-8'>
-                        <img src={team_1} alt="Logo" className='w-10/12 border-4 border-red-50 rounded-full' />
+                        <img data-aos='zoom-in' src={team_1} alt="Logo" className='w-10/12 border-4 border-red-50 rounded-full' />
 
-                        <h3 className="md:text-4xl font-junkdog text-2xl text-center uppercase">
+                        <h3 data-aos='fade-down' className="md:text-4xl font-junkdog text-2xl text-center uppercase">
                             dev
                         </h3>
                     </div>
 
                     <div className='flex flex-col items-center gap-y-8'>
-                        <img src={team_2} alt="Logo" className='w-10/12 border-4 border-red-50 rounded-full' />
+                        <img data-aos='zoom-in' src={team_2} alt="Logo" className='w-10/12 border-4 border-red-50 rounded-full' />
 
-                        <h3 className="md:text-4xl font-junkdog text-2xl text-center uppercase">
+                        <h3 data-aos='fade-down' className="md:text-4xl font-junkdog text-2xl text-center uppercase">
                             marketer
                         </h3>
                     </div>
 
                     <div className='flex flex-col items-center gap-y-8'>
-                        <img src={team_3} alt="Logo" className='w-10/12 border-4 border-red-50 rounded-full' />
+                        <img data-aos='zoom-in' src={team_3} alt="Logo" className='w-10/12 border-4 border-red-50 rounded-full' />
 
-                        <h3 className="md:text-4xl font-junkdog text-2xl text-center uppercase">
+                        <h3 data-aos='fade-down' className="md:text-4xl font-junkdog text-2xl text-center uppercase">
                             marketer
                         </h3>
                     </div>
 
                     <div className='flex flex-col items-center gap-y-8'>
-                        <img src={team_4} alt="Logo" className='w-8/12 border-4 border-red-50 rounded-full' />
+                        <img data-aos='zoom-in' src={team_4} alt="Logo" className='w-8/12 border-4 border-red-50 rounded-full' />
 
-                        <h3 className="md:text-4xl font-junkdog text-2xl text-center uppercase">
+                        <h3 data-aos='fade-down' className="md:text-4xl font-junkdog text-2xl text-center uppercase">
                             Community manager
                         </h3>
                     </div>
@@ -450,7 +464,7 @@ export default function Home() {
                 <p className='pb-5 text-red-50 font-medium text-center'>
                     RED PEPE
                 </p>
-                <h3 className="md:text-5xl font-junkdog text-2xl text-center">
+                <h3 data-aos='slide-up' className="md:text-5xl font-junkdog text-2xl text-center">
                     PARTNERS
                 </h3>
             </div>
@@ -458,12 +472,12 @@ export default function Home() {
             <div className='bg-brown-50 lg:px-20 px-5'>
                 <div className='container mx-auto'>
                     <div className='flex flex-wrap justify-center items-end gap-x-20 lg:py-10 py-6 lg:space-y-0 space-y-8'>
-                        <img src={p_1} alt="Logo" className='w-24' />
-                        <img src={p_2} alt="Logo" className='w-24' />
-                        <img src={p_3} alt="Logo" className='w-24' />
-                        <img src={p_4} alt="Logo" className='w-24' />
-                        <img src={p_5} alt="Logo" className='w-24' />
-                        <img src={p_6} alt="Logo" className='w-24' />
+                        <img data-aos='slide-right' src={p_1} alt="Logo" className='w-24' />
+                        <img data-aos='slide-right' src={p_2} alt="Logo" className='w-24' />
+                        <img data-aos='zoom-out' src={p_3} alt="Logo" className='w-24' />
+                        <img data-aos='zoom-out' src={p_4} alt="Logo" className='w-24' />
+                        <img data-aos='slide-left' src={p_5} alt="Logo" className='w-24' />
+                        <img data-aos='slide-left' src={p_6} alt="Logo" className='w-24' />
                     </div>
                 </div>
             </div>
