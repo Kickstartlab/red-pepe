@@ -1,0 +1,14 @@
+.line {
+  background: #C21414;
+  animation: line 6s 5s infinite linear;
+}
+
+@keyframes line {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
